@@ -1,74 +1,84 @@
+/* Estilos generales para el cuerpo de la página */
 body {
-    background-color: #f0f2f5;
-    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5; /* Color de fondo gris claro */
+    font-family: 'Arial', sans-serif; /* Fuente principal */
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; /* Asegura que el cuerpo tenga al menos la altura de la pantalla */
 }
 
+/* Contenedor principal centrado */
 .container {
-    flex-grow: 1;
+    flex-grow: 1; /* Permite que el contenedor crezca para ocupar el espacio disponible */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    text-align: center; /* Alineación de texto centrada */
 }
 
+/* Tarjeta de contenido */
 .card {
-    background: white;
-    border-radius: 15px;
-    padding: 20px;
-    max-width: 600px;
-    width: 100%;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    background: white; /* Fondo blanco */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    max-width: 600px; /* Ancho máximo */
+    width: 100%; /* Se ajusta al tamaño del contenedor */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar efecto de elevación */
 }
 
+/* Estilo para el título */
 h2 {
-    color: #333;
-    font-weight: bold;
+    color: #333; /* Color de texto oscuro */
+    font-weight: bold; /* Texto en negrita */
 }
 
+/* Contenedor de los controles de color */
 .color-control {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 10px;
+    align-items: center; /* Alineación vertical */
+    justify-content: space-between; /* Espaciado entre elementos */
+    margin-bottom: 10px; /* Margen inferior */
 }
 
+/* Estilos para las etiquetas de los controles de color */
 .color-control label {
-    width: 70px;
-    font-weight: bold;
+    width: 70px; /* Ancho fijo */
+    font-weight: bold; /* Texto en negrita */
 }
 
+/* Estilos para los inputs de números */
 input[type="number"] {
-    width: 70px;
-    text-align: center;
+    width: 70px; /* Ancho fijo */
+    text-align: center; /* Centrar el texto */
 }
 
+/* Estilos para el selector de color */
 input[type="color"] {
-    width: 100%;
-    height: 40px;
-    border: none;
-    cursor: pointer;
+    width: 100%; /* Ocupar todo el ancho disponible */
+    height: 40px; /* Altura fija */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cursor en forma de mano al pasar */
 }
 
+/* Estilos para la vista previa del color */
 #color-box {
-    width: 120px;
-    height: 120px;
-    border: 2px solid #ddd;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease-in-out;
+    width: 120px; /* Ancho del cuadro de color */
+    height: 120px; /* Altura del cuadro de color */
+    border: 2px solid #ddd; /* Borde gris claro */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: background-color 0.3s ease-in-out; /* Transición suave al cambiar de color */
 }
 
+/* Código hexadecimal mostrado debajo del cuadro de color */
 #hex-code {
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: #444;
+    font-size: 1.4rem; /* Tamaño de fuente grande */
+    font-weight: bold; /* Texto en negrita */
+    color: #444; /* Color oscuro */
 }
 
 /* Asegura que el footer se mantenga fijo en la parte inferior */
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    position: fixed; /* Posición fija */
+    bottom: 0; /* Pegado a la parte inferior */
+    width: 100%; /* Ocupar todo el ancho */
 }
