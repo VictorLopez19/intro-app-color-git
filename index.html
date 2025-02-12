@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector de Color RGB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- Menú superior fijo -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Aplicación de pruebas de color</a>
+        </div>
+    </nav>
+
+    <!-- Contenedor principal centrado -->
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+        <div class="card p-2 shadow-lg">
+            <h2 class="text-center mb-4">🎨 Selector de Color RGB</h2>
+
+            <div class="row">
+                <!-- Controles de color -->
+                <div class="col-md-6">
+                    <label for="color-picker" class="form-label">🎨 Selecciona un color:</label>
+                    <input type="color" id="color-picker" class="form-control mb-3">
+
+                    <div class="color-control">
+                        <label for="red">🔴 Rojo</label>
+                        <input type="range" id="red" min="0" max="255" value="128" class="form-range">
+                        <input type="number" id="red-input" min="0" max="255" value="128" class="form-control mb-2">
+                    </div>
+
+                    <div class="color-control">
+                        <label for="green">🟢 Verde</label>
+                        <input type="range" id="green" min="0" max="255" value="128" class="form-range">
+                        <input type="number" id="green-input" min="0" max="255" value="128" class="form-control mb-2">
+                    </div>
+
+                    <div class="color-control">
+                        <label for="blue">🔵 Azul</label>
+                        <input type="range" id="blue" min="0" max="255" value="128" class="form-range">
+                        <input type="number" id="blue-input" min="0" max="255" value="128" class="form-control">
+                    </div>
+                </div>
+
+                <!-- Vista previa del color -->
+                <div class="col-md-6 d-flex flex-column align-items-center justify-content-center">
+                    <div id="color-box" class="rounded-circle"></div>
+                    <p id="hex-code" class="mt-3">#808080</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer fijo en la parte inferior -->
+    <footer class="bg-dark text-white text-center py-3 fixed-bottom">
+        <p class="mb-0">&copy; 2025. Todos los derechos reservados | Victor López</p>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
